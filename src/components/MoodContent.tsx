@@ -27,6 +27,15 @@ const ContentContainer = styled.div<StyledContentProps>`
   max-width: 90%;
   width: 800px;
   z-index: 10;
+  margin-top: 60px;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    margin-top: 50px;
+    min-height: auto;
+    max-width: 95%;
+    width: 95%;
+  }
   
   ${({ mood }) => {
     switch (mood) {
@@ -66,6 +75,11 @@ const Title = styled.h2`
   margin-bottom: 1.5rem;
   color: white;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const ContentText = styled.p`
@@ -74,6 +88,12 @@ const ContentText = styled.p`
   max-width: 800px;
   margin-bottom: 2rem;
   color: rgba(255, 255, 255, 0.8);
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const SuggestionList = styled.ul`
@@ -85,6 +105,10 @@ const SuggestionList = styled.ul`
   gap: 1rem;
   width: 100%;
   max-width: 600px;
+  
+  @media (max-width: 768px) {
+    gap: 0.8rem;
+  }
 `;
 
 const SuggestionItem = styled.li`
@@ -96,6 +120,11 @@ const SuggestionItem = styled.li`
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
+  
+  @media (max-width: 768px) {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
   
   &:hover {
     transform: translateY(-3px);

@@ -18,6 +18,10 @@ const MoodSelectorContainer = styled.div`
   padding: 2rem;
   text-align: center;
   z-index: 10;
+  
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -25,6 +29,11 @@ const Title = styled.h1`
   margin-bottom: 2rem;
   color: white;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const MoodOptionsContainer = styled.div`
@@ -33,6 +42,10 @@ const MoodOptionsContainer = styled.div`
   justify-content: center;
   gap: 1.5rem;
   max-width: 800px;
+  
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
 `;
 
 interface MoodCardProps {
@@ -53,6 +66,16 @@ const MoodCard = styled.div<MoodCardProps>`
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  @media (max-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
+  
+  @media (max-width: 480px) {
+    width: 100px;
+    height: 100px;
+  }
   
   ${({ mood }) => {
     switch (mood) {
@@ -111,6 +134,15 @@ const Emoji = styled.span`
   font-size: 3rem;
   margin-bottom: 0.5rem;
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
 `;
 
 const MoodLabel = styled.span`
@@ -118,6 +150,14 @@ const MoodLabel = styled.span`
   font-weight: bold;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const MoodSelector: React.FC<MoodSelectorProps> = ({ onMoodSelect }) => {

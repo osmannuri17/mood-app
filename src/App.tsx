@@ -103,10 +103,10 @@ const AppContainer = styled.div<AppContainerProps>`
 `;
 
 const BackButton = styled.button`
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 50px;
@@ -117,11 +117,19 @@ const BackButton = styled.button`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   backdrop-filter: blur(5px);
+  z-index: 100;
   
   &:hover {
     transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  @media (max-width: 768px) {
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 `;
 
