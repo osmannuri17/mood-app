@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mood-app/static/css/main.327d445a.css",
+    "main.js": "/mood-app/static/js/main.506b67b7.js",
+    "static/js/453.45d5871a.chunk.js": "/mood-app/static/js/453.45d5871a.chunk.js",
+    "index.html": "/mood-app/index.html",
+    "main.327d445a.css.map": "/mood-app/static/css/main.327d445a.css.map",
+    "main.506b67b7.js.map": "/mood-app/static/js/main.506b67b7.js.map",
+    "453.45d5871a.chunk.js.map": "/mood-app/static/js/453.45d5871a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.327d445a.css",
+    "static/js/main.506b67b7.js"
+  ]
+}
