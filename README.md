@@ -1,53 +1,41 @@
-# Mood App
+# Zazizmir
 
-Bu uygulama, kullanıcının duygu durumuna göre içerik sunan interaktif bir web uygulamasıdır. Kullanıcı, mevcut duygu durumunu seçer ve uygulama, bu duygu durumuna uygun öneriler ve içerikler sunar.
+Karşıyaka, İzmir'de körfez manzaralı bir havuz, canlı müzik ve DJ setleriyle
+gün batımından geceye uzanan bir mekân için tanıtım sitesi.
 
-## Özellikler
+## Konsept
 
-- Kullanıcı dostu arayüz
-- Beş farklı duygu durumu seçeneği (Mutlu, Üzgün, Şaşkın, Sinirli, Düşünceli)
-- Her duygu durumu için özelleştirilmiş arka plan ve içerik
-- Duygu durumuna göre kişiselleştirilmiş öneriler
-- Responsive tasarım
+Site, sayfa kaydırıldıkça gökyüzünü gündüzün altın ışığından gün batımına,
+oradan da gecenin DJ/sahne enerjisine taşıyan sabit bir arka plan üzerine
+kurulu. İçerik panelleri bu gökyüzünün üzerinde buzlu cam (glassmorphism)
+kartlar olarak yüzüyor.
+
+Bölümler:
+
+- **Hero** — marka girişi ve öne çıkan üç zaman dilimi (gündüz / akşam / gece)
+- **Konsept** — mekânın hikâyesi ve temel bilgiler
+- **Deneyim** — havuz, canlı müzik ve DJ set kartları
+- **Menü** — kategorilere ayrılmış taslak menü (isimler/fiyatlar örnektir)
+- **Etkinlikler** — haftalık canlı müzik / DJ programı
+- **Galeri** — mekân fotoğrafları eklenene kadar renk paleti önizlemesi
+- **Konum** — Karşıyaka/Bostanlı konum bilgisi ve harita yer tutucusu
+- **Rezervasyon** — demo rezervasyon formu
 
 ## Teknolojiler
 
-- React
-- TypeScript
-- Styled Components
+- React + TypeScript
+- styled-components
 
 ## Kurulum
 
-Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
-
-1. Repoyu klonlayın:
-```
-git clone <repo-url>
-```
-
-2. Proje dizinine gidin:
-```
-cd mood-app
-```
-
-3. Gerekli paketleri yükleyin:
 ```
 npm install
-```
-
-4. Uygulamayı başlatın:
-```
 npm start
 ```
 
-Uygulama, tarayıcınızda [http://localhost:3000](http://localhost:3000) adresinde çalışacaktır.
+Uygulama [http://localhost:3000](http://localhost:3000) adresinde çalışır.
 
-## Kullanım
+## Notlar
 
-1. Ana sayfada "Bugün nasıl hissediyorsun?" sorusuna cevap olarak duygu durumunuzu seçin.
-2. Seçtiğiniz duygu durumuna göre özelleştirilmiş içerik ve öneriler görüntülenecektir.
-3. Farklı bir duygu durumu seçmek için "Geri Dön" butonuna tıklayın.
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
+Menü kalemleri, fiyatlar, adres ve iletişim bilgileri şu an için taslak/örnek
+niteliğindedir ve mekân detayları netleştikçe güncellenmesi gerekir.
