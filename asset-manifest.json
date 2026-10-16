@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mood-app/static/css/main.327d445a.css",
-    "main.js": "/mood-app/static/js/main.675e6123.js",
-    "static/js/453.45d5871a.chunk.js": "/mood-app/static/js/453.45d5871a.chunk.js",
+    "main.css": "/mood-app/static/css/main.a9864195.css",
+    "main.js": "/mood-app/static/js/main.6d288783.js",
+    "static/js/453.9c9e5273.chunk.js": "/mood-app/static/js/453.9c9e5273.chunk.js",
     "index.html": "/mood-app/index.html",
-    "main.327d445a.css.map": "/mood-app/static/css/main.327d445a.css.map",
-    "main.675e6123.js.map": "/mood-app/static/js/main.675e6123.js.map",
-    "453.45d5871a.chunk.js.map": "/mood-app/static/js/453.45d5871a.chunk.js.map"
+    "main.a9864195.css.map": "/mood-app/static/css/main.a9864195.css.map",
+    "main.6d288783.js.map": "/mood-app/static/js/main.6d288783.js.map",
+    "453.9c9e5273.chunk.js.map": "/mood-app/static/js/453.9c9e5273.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.327d445a.css",
-    "static/js/main.675e6123.js"
+    "static/css/main.a9864195.css",
+    "static/js/main.6d288783.js"
   ]
 }
