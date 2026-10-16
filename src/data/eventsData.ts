@@ -1,52 +1,77 @@
 export interface EventItem {
+  date: string;
   day: string;
-  time: string;
   title: string;
-  type: 'Canlı Müzik' | 'DJ Set' | 'Özel';
-  desc: string;
+  subtitle?: string;
+  type: 'Canlı Müzik' | 'Akustik' | 'DJ Set' | 'Akşam Yemeği' | 'Kahvaltı';
+  dinner?: string;
+  music?: string;
+  desc?: string;
 }
+
+export const programWeek = '12 — 18 Ekim';
+
+export const reservationPhone = '0533 668 99 29';
+
+const quietEvening =
+  'Günü sakin bir sofrada, lezzetli yemekler ve güzel sohbetlerle tamamlamak isteyenlere...';
 
 export const events: EventItem[] = [
   {
+    date: '12.10',
+    day: 'Pazartesi',
+    title: 'Sakin Akşam Sofrası',
+    type: 'Akşam Yemeği',
+    desc: quietEvening,
+  },
+  {
+    date: '13.10',
+    day: 'Salı',
+    title: 'Sakin Akşam Sofrası',
+    type: 'Akşam Yemeği',
+    desc: quietEvening,
+  },
+  {
+    date: '14.10',
+    day: 'Çarşamba',
+    title: 'UnderCover Orkestrası',
+    subtitle: 'Canlı Müzik',
+    type: 'Canlı Müzik',
+    dinner: '20:00',
+    music: '21:00',
+  },
+  {
+    date: '15.10',
     day: 'Perşembe',
-    time: '19:00 — 22:00',
-    title: 'Sunset Sessions',
-    type: 'Canlı Müzik',
-    desc: 'Akustik gitar & caz trio, havuz kenarında gün batımı seti.',
+    title: 'Burak Toktamış',
+    subtitle: 'Akustik Şarkılar',
+    type: 'Akustik',
+    dinner: '20:00',
+    music: '21:00',
   },
   {
+    date: '16.10',
     day: 'Cuma',
-    time: '20:00 — 23:00',
-    title: 'Zazi Live',
+    title: 'Sedat Yüce',
+    subtitle: 'Canlı Müzik',
     type: 'Canlı Müzik',
-    desc: 'Misafir sanatçılarla soul & funk performansı.',
+    dinner: '20:00',
+    music: '21:00',
   },
   {
-    day: 'Cuma',
-    time: '23:00 — 02:00',
-    title: 'Körfez Nights',
-    type: 'DJ Set',
-    desc: 'Deep house & organik elektronik, konuk DJ rotasyonu.',
-  },
-  {
+    date: '17.10',
     day: 'Cumartesi',
-    time: '13:00 — 18:00',
-    title: 'Pool Day Beats',
+    title: 'DJ Avni Emektar',
+    subtitle: 'Perküsyon Sabri Oskay',
     type: 'DJ Set',
-    desc: 'Gündüz havuz partisi, chill-house selektörlük.',
+    dinner: '20:00',
+    music: '21:00',
   },
   {
-    day: 'Cumartesi',
-    time: '23:30 — 03:00',
-    title: 'Zazizmir Night',
-    type: 'DJ Set',
-    desc: 'Ayın öne çıkan gecesi — özel konuk DJ ve görsel şov.',
-  },
-  {
+    date: '18.10',
     day: 'Pazar',
-    time: '11:00 — 15:00',
-    title: 'Havuz Başı Brunch',
-    type: 'Özel',
-    desc: 'Akustik müşayeret eşliğinde açık büfe brunch.',
+    title: 'Pazar Kahvaltısı',
+    subtitle: 'Pazar Keyfi',
+    type: 'Kahvaltı',
   },
 ];
